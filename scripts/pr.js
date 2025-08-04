@@ -28,7 +28,7 @@ const {data: pull} = await octokit.rest.pulls.create({
     title: `Translation update: ${year}/${month}/${date}`,
     head: `${owner}:${branch}`,
     base: DEFAULT_BRANCH,
-    body: "Daily translation update (via GitHub Actions).",
+    body: "Weekly translation update (via GitHub Actions).",
 });
 
 await octokit.rest.issues.addLabels({
